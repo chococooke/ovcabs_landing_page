@@ -1,0 +1,92 @@
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__animation_circle {
+        position: absolute;
+        height: 60rem;
+        width: 60rem;
+        border-radius: 100%;
+        top: -25%;
+        left: -5%;
+        background-color: rgba($color: #fff, $alpha: 0.1);
+        border: 3px solid rgba($color: #fff, $alpha: 0.2);
+        z-index: 1;
+        animation: grow 60s ease-in-out infinite;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            height: 40rem;
+            width: 40rem;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            border: 3px solid rgba($color: #fff, $alpha: 0.2);
+            z-index: 1;
+            animation: grow 64s ease-in-out infinite;
+        }
+
+        &::before {
+            content: " ";
+            position: absolute;
+            height: 30rem;
+            width: 30rem;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            border: 3px solid rgba($color: #fff, $alpha: 0.2);
+            z-index: 1;
+            animation: grow 56s ease-in-out infinite;
+        }
+    }
+
+    &__img {
+        width: 40%;
+        z-index: 1;
+
+        &>img {
+            height: 30vw;
+
+            &::after {
+                content: "";
+
+            }
+        }
+
+        // &::after {
+        //     content: "";
+        //     height: 40vh;
+        //     width: 40vw;
+        //     background-color: white;
+        // }
+    }
+
+    &-text {
+        width: 50%;
+        padding: 1rem;
+        color: #000;
+        z-index: 3;
+
+        // &> {
+        //     text-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.4);
+        // }
+
+        &>h1 {
+            font-size: $hero-heading-primary;
+            font-weight: 800;
+        }
+
+        &>h2 {
+            font-weight: 600;
+            margin: 1rem 0;
+            font-size: $hero-heading-secondary;
+            opacity: 0.6;
+        }
+    }
+}

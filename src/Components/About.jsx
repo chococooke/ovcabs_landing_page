@@ -2,14 +2,16 @@ import img from "../images/about.svg";
 
 const About = () => {
     return (
-        <div className="about">
+        <section id="about" className="about">
             <div className="about__title">
                 <h2>About</h2>
             </div>
             <div className="about__info">
                 <div className="about__info-text">
-                    <h2 className="about__info-text-heading">We are Empowering <span>#Indian</span> Youth!<br /></h2>
-                    <h3 className="about__info-text-heading-min">Unleash the Countless Opportunities with OV.</h3>
+                    <h2 className="about__info-text-heading">
+                        We are Empowering <span>#Indian</span> Youth!<br />
+                    </h2>
+                    <h3 className="about__info-text-heading-min">Unleash the Countless Opportunities with OV Cabs.</h3>
                 </div>
                 <div className="about__info-img">
                     <img src={img} alt="about" />
@@ -22,7 +24,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

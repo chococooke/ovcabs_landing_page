@@ -4,6 +4,8 @@ const Header = () => {
             <div className="header__brand">
                 <img src="http://www.ovcab.com/images/OvCabsDarkLOGO.ico" alt="logo" />
             </div>
+            <input type="checkbox" className="header__nav-checkbox" />
+            <div className="header__nav-menu"></div>
             <div className="header__nav">
                 <div className="header__nav-ul">
                     <li className="header__nav-ul-link">

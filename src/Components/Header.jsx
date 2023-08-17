@@ -1,8 +1,10 @@
+import logo from "../images/logo.ico";
+
 const Header = () => {
     return (
         <div className="header">
             <div className="header__brand">
-                <img src="http://www.ovcab.com/images/OvCabsDarkLOGO.ico" alt="logo" />
+                <img src={logo} alt="logo" />
             </div>
             <input type="checkbox" className="header__nav-checkbox" />
             <div className="header__nav-menu"></div>
